@@ -13,7 +13,7 @@ if "chat_history" not in st.session_state:
 def bot_reply(user_input):
     user_input = user_input.lower()
     if any(greet in user_input for greet in ["hi", "hello", "hey"]):
-        return "Hello! 👋 I'm your chatbot. How can I help you today?"
+        return "Hello! 👋 I'm your chatbot Anirudh . How can I help you today?"
     elif "your name" in user_input:
         return "I'm just a simple AI demo. You can name me whatever you like!"
     elif "how are you" in user_input:
