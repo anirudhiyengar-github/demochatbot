@@ -31,7 +31,7 @@ if st.button("Send") and user_input.strip():
     response = bot_reply(user_input)
     st.session_state.chat_history.append(("You", user_input))
     st.session_state.chat_history.append(("Bot", response))
-    st.experimental_rerun()
+    st.rerun()
 
 # Display chat history
 for speaker, message in st.session_state.chat_history:
